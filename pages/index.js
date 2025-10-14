@@ -137,7 +137,37 @@ export default function Home() {
       MVP preview. We’ll hook this to an AI form + review workflow soon.
     </div>
   </div>
+</section>{/* GLOBAL COLLABORATION */}
+<section id="partners" style={{ maxWidth: 1120, margin: "32px auto 40px", padding: "0 16px" }}>
+  <h2 style={{ fontSize: 28, fontWeight: 700, color: "#235d35", marginBottom: 12 }}>Global Collaboration</h2>
+  <p style={{ color: "#555", marginBottom: 16 }}>
+    We partner with leading hemp associations worldwide to exchange standards, open markets, and align on UN SDGs.
+  </p>
+  <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 16 }}>
+    <div style={{ background: "#fff", borderRadius: 16, padding: 18, boxShadow: "0 1px 3px rgba(0,0,0,0.06)" }}>
+      <div style={{ fontWeight: 700 }}>EIHA (Europe)</div>
+      <p style={{ fontSize: 14, color: "#555", marginTop: 6 }}>
+        Policy & standards exchange, cross-market access, and joint research pipelines.
+      </p>
+      <a href="#contact" style={{ fontSize: 14, color: "#235d35", textDecoration: "none" }}>Explore collaboration →</a>
+    </div>
+    <div style={{ background: "#fff", borderRadius: 16, padding: 18, boxShadow: "0 1px 3px rgba(0,0,0,0.06)" }}>
+      <div style={{ fontWeight: 700 }}>HIA / NHGA (North America)</div>
+      <p style={{ fontSize: 14, color: "#555", marginTop: 6 }}>
+        Farmer representation, market development, and compliance insights.
+      </p>
+      <a href="#contact" style={{ fontSize: 14, color: "#235d35", textDecoration: "none" }}>Explore collaboration →</a>
+    </div>
+    <div style={{ background: "#fff", borderRadius: 16, padding: 18, boxShadow: "0 1px 3px rgba(0,0,0,0.06)" }}>
+      <div style={{ fontWeight: 700 }}>IFCHA (Global)</div>
+      <p style={{ fontSize: 14, color: "#555", marginTop: 6 }}>
+        International coordination, UN-aligned advocacy, and multi-country projects.
+      </p>
+      <a href="#contact" style={{ fontSize: 14, color: "#235d35", textDecoration: "none" }}>Explore collaboration →</a>
+    </div>
+  </div>
 </section>
+
 <section style={{ maxWidth: 1120, margin: "32px auto 0", padding: "16px" }}>
   <div style={{
     borderRadius: 24,
