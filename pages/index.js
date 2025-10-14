@@ -90,6 +90,8 @@ export default function Home(return (
 
   return (
     <main style={{ fontFamily: "system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" }}>
+return (
+    <main style={{ fontFamily: "system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" }}>
       {/* NAV */}
       <header style={{ position: "sticky", top: 0, zIndex: 30, background: "rgba(255,255,255,0.8)", backdropFilter: "blur(6px)", borderBottom: "1px solid #eee" }}>
         <div style={{ maxWidth: 1120, margin: "0 auto", padding: "12px 16px", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
