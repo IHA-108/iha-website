@@ -329,7 +329,42 @@ export default function Home() {
           <div style={{ textAlign: "center", fontSize: 12, color: "#666", paddingBottom: 24 }}>
             © {new Date().getFullYear()} Indian Hemp Association. All rights reserved.
           </div>
-        </footer>
+        </footer>{/* FLOATING AI CEO ASSISTANT */}
+<div style={{
+  position: "fixed",
+  right: 16,
+  bottom: 16,
+  zIndex: 50,
+  display: "flex",
+  gap: 8
+}} aria-label="AI CEO Assistant quick contact">
+  <a
+    href="https://wa.me/919999659994?text=Hello%20IHA%2C%20I%20need%20assistance"
+    style={{
+      background: "#25D366",
+      color: "#fff",
+      padding: "12px 14px",
+      borderRadius: 999,
+      textDecoration: "none",
+      fontWeight: 700,
+      boxShadow: "0 6px 20px rgba(0,0,0,0.15)"
+    }}
+  >AI CEO — WhatsApp</a>
+
+  <a
+    href="mailto:info@indianhempassociation.com?subject=AI%20CEO%20Assistance&body=Hi%20IHA%2C%20I%27d%20like%20help%20with..."
+    style={{
+      background: "#235d35",
+      color: "#fff",
+      padding: "12px 14px",
+      borderRadius: 999,
+      textDecoration: "none",
+      fontWeight: 700,
+      boxShadow: "0 6px 20px rgba(0,0,0,0.15)"
+    }}
+  >Email</a>
+</div>
+
       </main>
     </>
   );
