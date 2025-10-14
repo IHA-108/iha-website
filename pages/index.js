@@ -33,6 +33,80 @@ export default function Home() {
       </div>
     ))}
   </div>
+</section> {/* PROJECTS / CROWDFUNDING */}
+<section id="projects" style={{ maxWidth: 1120, margin: "32px auto 0", padding: "0 16px" }}>
+  <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: 12 }}>
+    <h2 style={{ fontSize: 28, fontWeight: 700, color: "#235d35" }}>Crowdfunding Hub</h2>
+    <div style={{ fontSize: 14, color: "#666" }}>Filters (coming soon)</div>
+  </div>
+
+  <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 16 }}>
+    {[
+      {
+        id: "p1",
+        title: "Hempcrete Micro-Block Unit — Uttarakhand",
+        region: "India / North",
+        impact: ["Carbon", "Housing", "Jobs"],
+        goalINR: 12000000,
+        raisedINR: 4200000,
+        desc: "Decentralized hempcrete micro-block manufacturing unit; local jobs and reduced cement emissions.",
+      },
+      {
+        id: "p2",
+        title: "Regenerative Hemp Farming Co-op — Punjab",
+        region: "India / North-West",
+        impact: ["Soil", "Carbon", "Farmer Income"],
+        goalINR: 8000000,
+        raisedINR: 2600000,
+        desc: "120-farmer co-op transitioning to hemp rotations, soil restoration, and fiber-market linkages.",
+      },
+      {
+        id: "p3",
+        title: "Fiber Processing & Decortication Hub — Telangana",
+        region: "India / South",
+        impact: ["Industry", "Jobs"],
+        goalINR: 25000000,
+        raisedINR: 9000000,
+        desc: "Regional decortication hub linked to export-grade fiber buyers.",
+      },
+    ].map((p) => {
+      const progress = Math.min(100, Math.round((p.raisedINR / p.goalINR) * 100));
+      const formatINR = (n) =>
+        new Intl.NumberFormat("en-IN", { style: "currency", currency: "INR", maximumFractionDigits: 0 }).format(n);
+      return (
+        <div key={p.id} style={{ background: "#fff", borderRadius: 16, padding: 18, boxShadow: "0 1px 3px rgba(0,0,0,0.06)" }}>
+          <div style={{ fontWeight: 700, marginBottom: 6 }}>
+            <a href="#invest" style={{ color:"#111", textDecoration:"none" }}>{p.title}</a>
+          </div>
+          <div style={{ fontSize: 12, color: "#666", marginBottom: 8 }}>{p.region}</div>
+          <p style={{ fontSize: 14, lineHeight: 1.5 }}>{p.desc}</p>
+
+          <div style={{ display: "flex", gap: 8, flexWrap: "wrap", marginTop: 8 }}>
+            {p.impact.map((t) => (
+              <span key={t} style={{ fontSize: 12, background: "#f3f4f6", padding: "4px 10px", borderRadius: 999 }}>{t}</span>
+            ))}
+          </div>
+
+          <div style={{ marginTop: 10 }}>
+            <div style={{ display: "flex", justifyContent: "space-between", fontSize: 12 }}>
+              <span>{formatINR(p.raisedINR)} raised</span>
+              <span style={{ fontWeight: 600 }}>{progress}%</span>
+            </div>
+            <div style={{ width: "100%", height: 8, background: "#eee", borderRadius: 999, overflow: "hidden", marginTop: 6 }}>
+              <div style={{ width: `${progress}%`, height: "100%", background: "#0d6e57" }} />
+            </div>
+            <div style={{ fontSize: 12, color: "#666", marginTop: 4 }}>Goal: {formatINR(p.goalINR)}</div>
+          </div>
+
+          <a href="mailto:info@indianhempassociation.com?subject=IHA%20Project%20Backing%20Enquiry:%20"
+             style={{ display: "block", textAlign: "center", marginTop: 12, background: "#235d35", color: "#fff",
+                      padding: "10px 12px", borderRadius: 12, textDecoration: "none" }}>
+            Invest / Back this Project
+          </a>
+        </div>
+      );
+    })}
+  </div>
 </section>
 <section style={{ maxWidth: 1120, margin: "32px auto 0", padding: "16px" }}>
   <div style={{
