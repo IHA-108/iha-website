@@ -15,7 +15,25 @@ export default function Home() {
       <main style={{ padding: '40px', fontFamily: 'system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial' }}>
         <h1 style={{ margin: 0, color: '#235d35' }}>Indian Hemp Association</h1>
         <p>Site bootstrapped successfully. We’ll add the full homepage after this build passes.</p>
-{/* HERO SECTION */}
+{/* HERO SECTION */}{/* IMPACT COUNTERS */}
+<section id="impact" style={{ maxWidth: 1120, margin: "24px auto 0", padding: "0 16px" }}>
+  <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))", gap: 12 }}>
+    {[
+      { label: "Hectares Under Hemp", value: 2000 },
+      { label: "Tons CO₂ Offset", value: 50000 },
+      { label: "Farmers Supported", value: 10000 },
+      { label: "Jobs Created", value: 2200 },
+      { label: "Funds Raised (INR)", value: 158000000 },
+    ].map((c) => (
+      <div key={c.label} style={{ background: "#fff", borderRadius: 16, padding: 18, textAlign: "center", boxShadow: "0 1px 3px rgba(0,0,0,0.06)" }}>
+        <div style={{ fontSize: 24, fontWeight: 700 }}>
+          {c.value.toLocaleString(undefined, { maximumFractionDigits: 0 })}
+        </div>
+        <div style={{ marginTop: 6, fontSize: 12, color: "#666" }}>{c.label}</div>
+      </div>
+    ))}
+  </div>
+</section>
 <section style={{ maxWidth: 1120, margin: "32px auto 0", padding: "16px" }}>
   <div style={{
     borderRadius: 24,
