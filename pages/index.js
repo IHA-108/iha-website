@@ -15,7 +15,43 @@ export default function Home() {
       <main style={{ padding: '40px', fontFamily: 'system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial' }}>
         <h1 style={{ margin: 0, color: '#235d35' }}>Indian Hemp Association</h1>
         <p>Site bootstrapped successfully. We’ll add the full homepage after this build passes.</p>
-{/* HERO SECTION */}{/* IMPACT COUNTERS */}
+{/* HERO SECTION */}{/* IMPACT COUNTERS */} {/* ABOUT + VISION 2030 */}
+<section id="about" style={{ maxWidth: 1120, margin: "28px auto 0", padding: "0 16px" }}>
+  <div style={{ background: "#fff", borderRadius: 16, padding: 20, boxShadow: "0 1px 3px rgba(0,0,0,0.06)" }}>
+    <h2 style={{ fontSize: 28, fontWeight: 700, color: "#235d35", marginBottom: 8 }}>About IHA</h2>
+    <p style={{ color: "#444", lineHeight: 1.6 }}>
+      The Indian Hemp Association (IHA) is an AI-led, SDG-aligned platform accelerating India’s hemp ecosystem —
+      from regenerative farming and processing to market access and financing. We convene growers, processors,
+      investors, researchers, and policy partners to unlock jobs, income, and climate impact.
+    </p>
+
+    <div style={{ marginTop: 16, display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 12 }}>
+      <div style={{ background: "#f7faf8", borderRadius: 12, padding: 14 }}>
+        <div style={{ fontWeight: 700, marginBottom: 6 }}>Vision 2030 — Farmers</div>
+        <div style={{ color: "#555" }}>Support <b>10,000+</b> farmers via co-ops, training, and fair contracts.</div>
+      </div>
+      <div style={{ background: "#f7faf8", borderRadius: 12, padding: 14 }}>
+        <div style={{ fontWeight: 700, marginBottom: 6 }}>Vision 2030 — Climate</div>
+        <div style={{ color: "#555" }}><b>1 Mt CO₂e</b> cumulative avoided/removed via hempcrete, fiber, and rotations.</div>
+      </div>
+      <div style={{ background: "#f7faf8", borderRadius: 12, padding: 14 }}>
+        <div style={{ fontWeight: 700, marginBottom: 6 }}>Vision 2030 — Industry</div>
+        <div style={{ color: "#555" }}>Enable <b>50+</b> regional processing units and export-grade value chains.</div>
+      </div>
+      <div style={{ background: "#f7faf8", borderRadius: 12, padding: 14 }}>
+        <div style={{ fontWeight: 700, marginBottom: 6 }}>Vision 2030 — Jobs</div>
+        <div style={{ color: "#555" }}><b>25,000</b> direct & indirect livelihoods in rural clusters.</div>
+      </div>
+    </div>
+
+    <div style={{ marginTop: 14, display: "flex", gap: 10, flexWrap: "wrap" }}>
+      <a href="#projects" style={{ background: "#235d35", color: "#fff", padding: "10px 14px", borderRadius: 12, textDecoration: "none" }}>Explore Projects</a>
+      <a href="#submit" style={{ border: "1px solid #235d35", color: "#235d35", padding: "10px 14px", borderRadius: 12, textDecoration: "none" }}>Submit a Proposal</a>
+      <a href="#partners" style={{ color: "#0d6e57", textDecoration: "none" }}>Partner With IHA →</a>
+    </div>
+  </div>
+</section>
+
 <section id="impact" style={{ maxWidth: 1120, margin: "24px auto 0", padding: "0 16px" }}>
   <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))", gap: 12 }}>
     {[
@@ -239,12 +275,12 @@ export default function Home() {
         </a>
       </div>
       <div style={{ marginTop: 8 }}>
-        <a href="tel:+919818093120" style={{ color: "#333", textDecoration: "none" }}>
-          📞 +91 98180 93120
+        <a href="tel:+919999659994" style={{ color: "#333", textDecoration: "none" }}>
+          📞 +91 9999 659994 
         </a>
       </div>
       <div style={{ marginTop: 4 }}>
-        <a href="https://wa.me/919818093120" style={{ color: "#333", textDecoration: "none" }}>
+        <a href="https://wa.me/919999659994" style={{ color: "#333", textDecoration: "none" }}>
           💬 Chat on WhatsApp
         </a>
       </div>
