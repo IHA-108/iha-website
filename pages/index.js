@@ -1,4 +1,52 @@
-export default function Home() {
+import Head from 'next/head';
+export default function Home(return (
+)export default function Home() {
+  const counters = [
+    // (your counters data here)
+  ];
+
+  const projects = [
+    // (your projects data here)
+  ];
+
+  const formatINR = (n) =>
+    new Intl.NumberFormat("en-IN", { style: "currency", currency: "INR", maximumFractionDigits: 0 }).format(n);
+
+  return (
+    <>
+      <Head>
+        <title>Indian Hemp Association — AI-led platform for India’s hemp future</title>
+        <meta
+          name="description"
+          content="Empowering India’s hemp revolution: funding farmers & processors, building markets, and tracking climate impact — led by the AI CEO."
+        />
+        <link rel="canonical" href="https://www.indianhempassociation.com" />
+
+        {/* Open Graph for social/WhatsApp */}
+        <meta property="og:title" content="Indian Hemp Association" />
+        <meta
+          property="og:description"
+          content="Invest in farmers, processors & innovation. Climate-positive livelihoods with the Indian Hemp Association."
+        />
+        <meta property="og:url" content="https://www.indianhempassociation.com" />
+        <meta property="og:type" content="website" />
+        {/* If/when you add a hero image in /public/og-image.jpg */}
+        {/* <meta property="og:image" content="https://www.indianhempassociation.com/og-image.jpg" /> */}
+
+        {/* Twitter card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Indian Hemp Association" />
+        <meta
+          name="twitter:description"
+          content="AI-led platform to grow India’s hemp industry — funding, training, and global collaboration."
+        />
+        {/* <meta name="twitter:image" content="https://www.indianhempassociation.com/og-image.jpg" /> */}
+      </Head>
+
+      <main style={{ fontFamily: "system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial" }}>
+        {/* NAV */}
+        ...
+ {
   const counters = [
     { label: "Hectares Under Hemp", value: 2000 },
     { label: "Tons CO₂ Offset", value: 50000 },
