@@ -13,7 +13,23 @@ export default function Home() {
       </Head>
 
       <main style={{ padding: '40px', fontFamily: 'system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial' }}>
-        <h1 style={{ margin: 0, color: '#235d35' }}>Indian Hemp Association</h1>
+        {/* HEADER / NAVBAR */}
+<header style={{ maxWidth: 1120, margin: "0 auto", padding: "12px 16px 24px",
+  display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+  <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+    <img src="/logo.png" alt="Indian Hemp Association" style={{ height: 36, width: "auto" }} />
+    <span style={{ fontWeight: 700, fontSize: 18, color: "#235d35" }}>Indian Hemp Association</span>
+  </div>
+  <div style={{ display: "flex", gap: 12 }}>
+    <a href="#about" style={{ color: "#333", textDecoration: "none" }}>About</a>
+    <a href="#projects" style={{ color: "#333", textDecoration: "none" }}>Projects</a>
+    <a href="#partners" style={{ color: "#333", textDecoration: "none" }}>Partners</a>
+    <a href="mailto:info@indianhempassociation.com?subject=Join%20IHA" style={{
+      background: "#235d35", color: "#fff", padding: "8px 14px", borderRadius: 12,
+      textDecoration: "none", fontWeight: 600 }}>Join IHA</a>
+  </div>
+</header>
+<h1 style={{ margin: 0, color: '#235d35' }}>Indian Hemp Association</h1>
         <p>Site bootstrapped successfully. We’ll add the full homepage after this build passes.</p>
 {/* HERO SECTION */}{/* IMPACT COUNTERS */} {/* ABOUT + VISION 2030 */}
 <section id="about" style={{ maxWidth: 1120, margin: "28px auto 0", padding: "0 16px" }}>
