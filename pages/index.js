@@ -187,7 +187,7 @@ export default function Home() {
           </div>
           <div id="join">
             <div style={{ fontWeight: 700, marginBottom: 8 }}>Contact</div>
-            <div style={{ color: "#666" }}>hello@indianhempassociation.com</div>
+            <div style={{ color: "#666" }}>info@indianhempassociation.com</div>
           </div>
         </div>
         <div style={{ textAlign: "center", fontSize: 12, color: "#666", paddingBottom: 24 }}>
