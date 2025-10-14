@@ -19,7 +19,7 @@ export default function Home() {
         <p>
           Contact:{' '}
           <a href="mailto:info@indianhempassociation.com">info@indianhempassociation.com</a> ·{' '}
-          <a href="tel:+919818093120">+91 98180 93120</a>
+          <a href="tel:+919999659994">+91 9999659994</a>
         </p>
       </main>
     </>
