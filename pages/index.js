@@ -199,8 +199,8 @@ export default function Home() {
     <a href="#contact" style={{ color: "#333", textDecoration: "none" }}>General Enquiries</a>
   </div>
   <div style={{ marginTop: 4 }}>
-    {/* Replace 0000000000 with your WhatsApp number in international format, e.g., 918765432109 */}
-    <a href="https://wa.me/0000000000" style={{ color: "#333", textDecoration: "none" }}>WhatsApp (tap to chat)</a>
+    {/* Replace 0000000000 with your WhatsApp number in international format, e.g., 919999659994 */}
+    <a href="https://wa.me/99999659994" style={{ color: "#333", textDecoration: "none" }}>WhatsApp (tap to chat)</a>
   </div>
 </div>
 
