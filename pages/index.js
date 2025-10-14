@@ -188,6 +188,22 @@ export default function Home() {
             <div>Funding Disclosures</div>
           </div>
           <div id="join">
+          <div id="contact">
+         <div style={{ fontWeight: 700, marginBottom: 8 }}>Contact</div>
+         <div style={{ color: "#666" }}>
+    <a href="mailto:info@indianhempassociation.com" style={{ color: "#235d35", textDecoration: "none" }}>
+      info@indianhempassociation.com
+    </a>
+  </div>
+  <div style={{ marginTop: 8 }}>
+    <a href="#contact" style={{ color: "#333", textDecoration: "none" }}>General Enquiries</a>
+  </div>
+  <div style={{ marginTop: 4 }}>
+    {/* Replace 0000000000 with your WhatsApp number in international format, e.g., 918765432109 */}
+    <a href="https://wa.me/0000000000" style={{ color: "#333", textDecoration: "none" }}>WhatsApp (tap to chat)</a>
+  </div>
+</div>
+
             <div style={{ fontWeight: 700, marginBottom: 8 }}>Contact</div>
             <div style={{ color: "#666" }}>info@indianhempassociation.com</div>
           </div>
