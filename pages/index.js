@@ -198,7 +198,64 @@ export default function Home() {
           Contact:{' '}
           <a href="mailto:info@indianhempassociation.com">info@indianhempassociation.com</a> ·{' '}
           <a href="tel:+919999659994">+91 9999659994</a>
-        </p>
+        </p> {/* FOOTER */}
+<footer style={{ borderTop: "1px solid #eee", marginTop: 40 }}>
+  <div style={{
+    maxWidth: 1120,
+    margin: "0 auto",
+    padding: "24px 16px",
+    display: "grid",
+    gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
+    gap: 16,
+    fontSize: 14
+  }}>
+    <div>
+      <div style={{ fontWeight: 700, color: "#235d35" }}>Indian Hemp Association</div>
+      <p style={{ color: "#666", marginTop: 6 }}>
+        AI-led ecosystem for India’s hemp future — advocacy, knowledge,
+        collaboration, and transparent project funding.
+      </p>
+    </div>
+
+    <div>
+      <div style={{ fontWeight: 700, marginBottom: 8 }}>Explore</div>
+      <div><a href="#projects" style={{ color: "#333", textDecoration: "none" }}>Projects</a></div>
+      <div><a href="#impact" style={{ color: "#333", textDecoration: "none" }}>Impact</a></div>
+      <div><a href="#partners" style={{ color: "#333", textDecoration: "none" }}>Partners</a></div>
+    </div>
+
+    <div>
+      <div style={{ fontWeight: 700, marginBottom: 8 }}>Legal</div>
+      <div><a href="/terms" style={{ color: "#333", textDecoration: "none" }}>Terms of Use</a></div>
+      <div><a href="/privacy" style={{ color: "#333", textDecoration: "none" }}>Privacy Policy</a></div>
+      <div><a href="/funding" style={{ color: "#333", textDecoration: "none" }}>Funding Disclosures</a></div>
+    </div>
+
+    <div id="contact">
+      <div style={{ fontWeight: 700, marginBottom: 8 }}>Contact</div>
+      <div>
+        <a href="mailto:info@indianhempassociation.com" style={{ color: "#235d35", textDecoration: "none" }}>
+          info@indianhempassociation.com
+        </a>
+      </div>
+      <div style={{ marginTop: 8 }}>
+        <a href="tel:+919818093120" style={{ color: "#333", textDecoration: "none" }}>
+          📞 +91 98180 93120
+        </a>
+      </div>
+      <div style={{ marginTop: 4 }}>
+        <a href="https://wa.me/919818093120" style={{ color: "#333", textDecoration: "none" }}>
+          💬 Chat on WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div style={{ textAlign: "center", fontSize: 12, color: "#666", paddingBottom: 24 }}>
+    © {new Date().getFullYear()} Indian Hemp Association. All rights reserved.
+  </div>
+</footer>
+
       </main>
     </>
   );
