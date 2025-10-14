@@ -328,7 +328,34 @@ export default function Home() {
 
           <div style={{ textAlign: "center", fontSize: 12, color: "#666", paddingBottom: 24 }}>
             © {new Date().getFullYear()} Indian Hemp Association. All rights reserved.
-          </div>
+          </div>{/* ANALYTICS BADGE (privacy-friendly) */}
+<div style={{
+  marginTop: 8,
+  display: "flex",
+  alignItems: "center",
+  gap: 8,
+  fontSize: 12,
+  color: "#666"
+}}>
+  <span style={{
+    display: "inline-block",
+    padding: "4px 8px",
+    borderRadius: 8,
+    background: "#f3f4f6",
+    border: "1px solid #e5e7eb"
+  }}>
+    Analytics: privacy-friendly (Vercel)
+  </span>
+  <a
+    href="https://vercel.com/dashboard" 
+    target="_blank" rel="noreferrer"
+    style={{ color: "#235d35", textDecoration: "none", fontWeight: 600 }}
+    title="Open Vercel → Project → Analytics"
+  >
+    View admin stats →
+  </a>
+</div>
+
         </footer>{/* FLOATING AI CEO ASSISTANT */}
 <div style={{
   position: "fixed",
