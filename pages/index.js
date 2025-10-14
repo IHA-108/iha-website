@@ -57,6 +57,8 @@ export default function Home() {
       </header>
 
       {/* HERO */}
+<a href="#contact" style={{ border: "1px solid rgba(255,255,255,0.5)", color: "#fff", padding: "10px 14px", borderRadius: 12, fontWeight: 600, textDecoration: "none" }}>Contact Us</a>
+
       <section style={{ maxWidth: 1120, margin: "32px auto 0", padding: "16px" }}>
         <div style={{
           borderRadius: 24,
