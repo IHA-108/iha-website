@@ -108,6 +108,36 @@ export default function Home() {
     })}
   </div>
 </section>
+    {/* SUBMIT YOUR PROJECT */}
+<section id="submit" style={{ maxWidth: 1120, margin: "32px auto 0", padding: "0 16px" }}>
+  <div style={{ background: "#fff", borderRadius: 16, padding: 18, boxShadow: "0 1px 3px rgba(0,0,0,0.06)" }}>
+    <h3 style={{ fontSize: 20, fontWeight: 700, marginBottom: 12 }}>Submit Your Project (AI-assisted)</h3>
+
+    <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: 10 }}>
+      <input placeholder="Project Title" style={{ border: "1px solid #ddd", borderRadius: 12, padding: "10px 12px" }} />
+      <input placeholder="Region (State / District)" style={{ border: "1px solid #ddd", borderRadius: 12, padding: "10px 12px" }} />
+      <input placeholder="Funding Goal (INR)" type="number" style={{ border: "1px solid #ddd", borderRadius: 12, padding: "10px 12px" }} />
+      <input placeholder="Primary Impact (e.g., Carbon)" style={{ border: "1px solid #ddd", borderRadius: 12, padding: "10px 12px" }} />
+    </div>
+
+    <textarea rows={5} placeholder="Describe your project, team, market linkages, and timeline..." style={{ border: "1px solid #ddd", borderRadius: 12, padding: "10px 12px", width: "100%", marginTop: 10 }} />
+
+    <div style={{ display: "flex", gap: 10, marginTop: 10, flexWrap: "wrap" }}>
+      <a href="mailto:info@indianhempassociation.com?subject=IHA%20Project%20Submission&body=Please%20attach%20a%20one-pager%20and%20your%20contacts."
+         style={{ background: "#111", color: "#fff", padding: "10px 12px", borderRadius: 12, textDecoration: "none" }}>
+        Send Submission (Email)
+      </a>
+      <a href="https://wa.me/919818093120?text=I%20want%20to%20submit%20a%20hemp%20project%20to%20IHA"
+         style={{ background: "#235d35", color: "#fff", padding: "10px 12px", borderRadius: 12, textDecoration: "none" }}>
+        Chat on WhatsApp
+      </a>
+    </div>
+
+    <div style={{ fontSize: 12, color: "#666", marginTop: 6 }}>
+      MVP preview. We’ll hook this to an AI form + review workflow soon.
+    </div>
+  </div>
+</section>
 <section style={{ maxWidth: 1120, margin: "32px auto 0", padding: "16px" }}>
   <div style={{
     borderRadius: 24,
