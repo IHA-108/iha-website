@@ -227,8 +227,8 @@ export default function Home() {
                 </a>
               </div>
               <div style={{ marginTop: 8 }}>
-                <a href="tel:+919818093120" style={{ color: "#333", textDecoration: "none" }}>
-                  📞 +91 98180 93120
+                <a href="tel:+919999659994" style={{ color: "#333", textDecoration: "none" }}>
+                  📞 +91 9999659994
                 </a>
               </div>
               <div style={{ marginTop: 4 }}>
