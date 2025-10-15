@@ -298,14 +298,14 @@ export default function Home() {
               <div><a href="#impact" style={{ color: "#333", textDecoration: "none" }}>Impact</a></div>
               <div><a href="#partners" style={{ color: "#333", textDecoration: "none" }}>Partners</a></div>
             </div>
-<div><a href="/programs" style={{ color: "#333", textDecoration: "none" }}>Programs</a></div>
+              <div><a href="/programs" style={{ color: "#333", textDecoration: "none" }}>Programs</a></div>
             <div>
               <div style={{ fontWeight: 700, marginBottom: 8 }}>Legal</div>
               <div><a href="/terms" style={{ color: "#333", textDecoration: "none" }}>Terms of Use</a></div>
               <div><a href="/privacy" style={{ color: "#333", textDecoration: "none" }}>Privacy Policy</a></div>
               <div><a href="/funding" style={{ color: "#333", textDecoration: "none" }}>Funding Disclosures</a></div>
             </div>
-<div>
+  <div>
 
             <div id="contact">
               <div style={{ fontWeight: 700, marginBottom: 8 }}>Contact</div>
@@ -356,8 +356,8 @@ export default function Home() {
     View admin stats →
   </a>
 </div>
-
-        </footer>{/* FLOATING AI CEO ASSISTANT */}
+      
+      </footer>{/* FLOATING AI CEO ASSISTANT */}
 <div style={{
   position: "fixed",
   right: 16,
