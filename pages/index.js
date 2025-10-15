@@ -50,8 +50,6 @@ export default function Home() {
       textDecoration: "none", fontWeight: 600
     }}>Join IHA</a>
   </div>
-</header>
-
         </header>
         {/* HERO SECTION */}
         <section style={{ maxWidth: 1120, margin: "0 auto", padding: "16px" }}>
