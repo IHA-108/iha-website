@@ -19,8 +19,12 @@ export default function ProcessorRegistration() {
       `Notes: ${data.notes || ""}`
     ].join("%0A");
 
-    window.location.href = `mailto:info@indianhempassociation.com?subject=New%20Processor%20Registration&body=${lines}`;
-    window.open(`https://wa.me/919999659994?text=IHA%20Processor%20Registration:%0A${lines}`, "_blank");
+    window.location.href =
+      `mailto:info@indianhempassociation.com?subject=New%20Processor%20Registration&body=${lines}`;
+    window.open(
+      `https://wa.me/919999659994?text=IHA%20Processor%20Registration:%0A${lines}`,
+      "_blank"
+    );
   };
 
   const Field = ({ label, name, type = "text", required=false }) => (
@@ -108,4 +112,3 @@ export default function ProcessorRegistration() {
     </>
   );
 }
-
