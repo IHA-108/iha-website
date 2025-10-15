@@ -49,16 +49,7 @@ export default function Home() {
               background: "#235d35", color: "#fff", padding: "8px 14px", borderRadius: 12,
               textDecoration: "none", fontWeight: 600 }}>Join IHA</a>
           </div>
-        </header> 
-        <a href="#about" style={{ color: "#333", textDecoration: "none" }}>About</a>
-        <a href="#projects" style={{ color: "#333", textDecoration: "none" }}>Projects</a>
-        <a href="#partners" style={{ color: "#333", textDecoration: "none" }}>Partners</a>
-        <a href="/programs" style={{ color: "#333", textDecoration: "none" }}>Programs</a>   {/* ← ADD THIS LINE */}
-        <a href="mailto:info@indianhempassociation.com?subject=Join%20IHA"
-   style={{ background: "#235d35", color: "#fff", padding: "8px 14px", borderRadius: 12,
-   textDecoration: "none", fontWeight: 600 }}>Join IHA</a>
-
-
+        </header>
         {/* HERO SECTION */}
         <section style={{ maxWidth: 1120, margin: "0 auto", padding: "16px" }}>
           <div style={{
