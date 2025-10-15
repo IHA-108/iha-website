@@ -33,22 +33,25 @@ export default function Home() {
       </Head>
 
       <main style={{ padding: '40px', fontFamily: 'system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial' }}>
-        {/* HEADER / NAVBAR */}
-        <header style={{ maxWidth: 1120, margin: "0 auto", padding: "12px 16px 24px",
-          display: "flex", alignItems: "center", justifyContent: "space-between" }}>
-          <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
-            {/* If your file name is different, change /logo.png here OR rename your file to logo.png in /public */}
-            <img src="/logo.png" alt="Indian Hemp Association" onError={hideIfBroken} style={{ height: 36, width: "auto" }} />
-            <span style={{ fontWeight: 700, fontSize: 18, color: "#235d35" }}>Indian Hemp Association</span>
-          </div>
-          <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
-            <a href="#about" style={{ color: "#333", textDecoration: "none" }}>About</a>
-            <a href="#projects" style={{ color: "#333", textDecoration: "none" }}>Projects</a>
-            <a href="#partners" style={{ color: "#333", textDecoration: "none" }}>Partners</a>
-            <a href="mailto:info@indianhempassociation.com?subject=Join%20IHA" style={{
-              background: "#235d35", color: "#fff", padding: "8px 14px", borderRadius: 12,
-              textDecoration: "none", fontWeight: 600 }}>Join IHA</a>
-          </div>
+        {/* HEADER / NAVBAR */} 
+<header style={{ maxWidth: 1120, margin: "0 auto", padding: "12px 16px 24px",
+  display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+  <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+    <img src="/logo.png" alt="Indian Hemp Association" onError={(e)=>{e.currentTarget.style.display='none'}} style={{ height: 36, width: "auto" }} />
+    <span style={{ fontWeight: 700, fontSize: 18, color: "#235d35" }}>Indian Hemp Association</span>
+  </div>
+  <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
+    <a href="#about" style={{ color: "#333", textDecoration: "none" }}>About</a>
+    <a href="#projects" style={{ color: "#333", textDecoration: "none" }}>Projects</a>
+    <a href="#partners" style={{ color: "#333", textDecoration: "none" }}>Partners</a>
+    <a href="/programs" style={{ color: "#333", textDecoration: "none" }}>Programs</a>
+    <a href="mailto:info@indianhempassociation.com?subject=Join%20IHA" style={{
+      background: "#235d35", color: "#fff", padding: "8px 14px", borderRadius: 12,
+      textDecoration: "none", fontWeight: 600
+    }}>Join IHA</a>
+  </div>
+</header>
+
         </header>
         {/* HERO SECTION */}
         <section style={{ maxWidth: 1120, margin: "0 auto", padding: "16px" }}>
