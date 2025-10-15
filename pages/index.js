@@ -40,7 +40,8 @@ export default function Home() {
     <img src="/logo.png" alt="Indian Hemp Association" onError={(e)=>{e.currentTarget.style.display='none'}} style={{ height: 36, width: "auto" }} />
     <span style={{ fontWeight: 700, fontSize: 18, color: "#235d35" }}>Indian Hemp Association</span>
   </div>
-  <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
+  <div style={{ display: "flex", gap: 12, flex
+  <div style={{ display: "flex", gap: 10, flexWrap: "wrap", rowGap: 8 }}>
     <a href="#about" style={{ color: "#333", textDecoration: "none" }}>About</a>
     <a href="#projects" style={{ color: "#333", textDecoration: "none" }}>Projects</a>
     <a href="#partners" style={{ color: "#333", textDecoration: "none" }}>Partners</a>
