@@ -274,126 +274,90 @@ export default function Home() {
         </section>
 
         {/* FOOTER */}
-        <footer style={{ borderTop: "1px solid #eee", marginTop: 40 }}>
-          <div style={{
-            maxWidth: 1120,
-            margin: "0 auto",
-            padding: "24px 16px",
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
-            gap: 16,
-            fontSize: 14
-          }}>
-            <div>
-              <div style={{ fontWeight: 700, color: "#235d35" }}>Indian Hemp Association</div>
-              <p style={{ color: "#666", marginTop: 6 }}>
-                AI-led ecosystem for India’s hemp future — advocacy, knowledge,
-                collaboration, and transparent project funding.
-              </p>
-            </div>
+        {/* FOOTER */}
+<footer style={{ borderTop: "1px solid #eee", marginTop: 40 }}>
+  <div style={{ maxWidth: 1120, margin: "0 auto", padding: "24px 16px",
+                display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
+                gap: 16, fontSize: 14 }}>
+    <div>
+      <div style={{ fontWeight: 700, color: "#235d35" }}>Indian Hemp Association</div>
+      <p style={{ color: "#666", marginTop: 6 }}>
+        AI-led ecosystem for India’s hemp future — advocacy, knowledge, collaboration,
+        and transparent project funding.
+      </p>
+    </div>
 
-            <div>
-              <div style={{ fontWeight: 700, marginBottom: 8 }}>Explore</div>
-              <div><a href="#projects" style={{ color: "#333", textDecoration: "none" }}>Projects</a></div>
-              <div><a href="#impact" style={{ color: "#333", textDecoration: "none" }}>Impact</a></div>
-              <div><a href="#partners" style={{ color: "#333", textDecoration: "none" }}>Partners</a></div>
-            </div>
-              <div><a href="/programs" style={{ color: "#333", textDecoration: "none" }}>Programs</a></div>
-            <div>
-              <div style={{ fontWeight: 700, marginBottom: 8 }}>Legal</div>
-              <div><a href="/terms" style={{ color: "#333", textDecoration: "none" }}>Terms of Use</a></div>
-              <div><a href="/privacy" style={{ color: "#333", textDecoration: "none" }}>Privacy Policy</a></div>
-              <div><a href="/funding" style={{ color: "#333", textDecoration: "none" }}>Funding Disclosures</a></div>
-            </div>
-  <div>
+    <div>
+      <div style={{ fontWeight: 700, marginBottom: 8 }}>Explore</div>
+      <div><a href="#projects" style={{ color: "#333", textDecoration: "none" }}>Projects</a></div>
+      <div><a href="#impact"   style={{ color: "#333", textDecoration: "none" }}>Impact</a></div>
+      <div><a href="#partners" style={{ color: "#333", textDecoration: "none" }}>Partners</a></div>
+      <div><a href="/programs" style={{ color: "#333", textDecoration: "none" }}>Programs</a></div>
+    </div>
 
-            <div id="contact">
-              <div style={{ fontWeight: 700, marginBottom: 8 }}>Contact</div>
-              <div>
-                <a href="mailto:info@indianhempassociation.com" style={{ color: "#235d35", textDecoration: "none" }}>
-                  info@indianhempassociation.com
-                </a>
-              </div>
-              <div style={{ marginTop: 8 }}>
-                <a href={phoneHref} style={{ color: "#333", textDecoration: "none" }}>
-                  📞 {phoneDisplay}
-                </a>
-              </div>
-              <div style={{ marginTop: 4 }}>
-                <a href={whatsappHref} style={{ color: "#333", textDecoration: "none" }}>
-                  💬 Chat on WhatsApp
-                </a>
-              </div>
-            </div>
-          </div>
+    <div>
+      <div style={{ fontWeight: 700, marginBottom: 8 }}>Legal</div>
+      <div><a href="/terms"   style={{ color: "#333", textDecoration: "none" }}>Terms of Use</a></div>
+      <div><a href="/privacy" style={{ color: "#333", textDecoration: "none" }}>Privacy Policy</a></div>
+      <div><a href="/funding" style={{ color: "#333", textDecoration: "none" }}>Funding Disclosures</a></div>
+    </div>
 
-          <div style={{ textAlign: "center", fontSize: 12, color: "#666", paddingBottom: 24 }}>
-            © {new Date().getFullYear()} Indian Hemp Association. All rights reserved.
-          </div>{/* ANALYTICS BADGE (privacy-friendly) */}
+    <div id="contact">
+      <div style={{ fontWeight: 700, marginBottom: 8 }}>Contact</div>
+      <div>
+        <a href="mailto:info@indianhempassociation.com" style={{ color: "#235d35", textDecoration: "none" }}>
+          info@indianhempassociation.com
+        </a>
+      </div>
+      <div style={{ marginTop: 8 }}>
+        <a href="tel:+919999659994" style={{ color: "#333", textDecoration: "none" }}>
+          📞 +91 99996 59994
+        </a>
+      </div>
+      <div style={{ marginTop: 4 }}>
+        <a href="https://wa.me/919999659994" style={{ color: "#333", textDecoration: "none" }}>
+          💬 Chat on WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div style={{ textAlign: "center", fontSize: 12, color: "#666", paddingBottom: 24 }}>
+    © {new Date().getFullYear()} Indian Hemp Association. All rights reserved.
+  </div>
+
+  {/* ANALYTICS BADGE (privacy-friendly) */}
+  <div style={{ marginTop: 8, display: "flex", alignItems: "center", gap: 8, fontSize: 12, color: "#666",
+                justifyContent: "center", paddingBottom: 16 }}>
+    <span style={{ display: "inline-block", padding: "4px 8px", borderRadius: 8, background: "#f3f4f6",
+                   border: "1px solid #e5e7eb" }}>
+      Analytics: privacy-friendly (Vercel)
+    </span>
+    <a href="https://vercel.com/dashboard" target="_blank" rel="noreferrer"
+       style={{ color: "#235d35", textDecoration: "none", fontWeight: 600 }}
+       title="Open Vercel → Project → Analytics">
+      View admin stats →
+    </a>
+  </div>
+</footer>
+
+{/* FLOATING AI CEO ASSISTANT */}
 <div style={{
-  marginTop: 8,
-  display: "flex",
-  alignItems: "center",
-  gap: 8,
-  fontSize: 12,
-  color: "#666"
-}}>
-  <span style={{
-    display: "inline-block",
-    padding: "4px 8px",
-    borderRadius: 8,
-    background: "#f3f4f6",
-    border: "1px solid #e5e7eb"
-  }}>
-    Analytics: privacy-friendly (Vercel)
-  </span>
-  <a
-    href="https://vercel.com/dashboard" 
-    target="_blank" rel="noreferrer"
-    style={{ color: "#235d35", textDecoration: "none", fontWeight: 600 }}
-    title="Open Vercel → Project → Analytics"
-  >
-    View admin stats →
+  position: "fixed", right: 16, bottom: 16, zIndex: 50, display: "flex", gap: 8
+}} aria-label="AI CEO Assistant quick contact">
+  <a href="https://wa.me/919999659994?text=Hello%20IHA%2C%20I%20need%20assistance"
+     style={{ background: "#25D366", color: "#fff", padding: "12px 14px", borderRadius: 999,
+              textDecoration: "none", fontWeight: 700, boxShadow: "0 6px 20px rgba(0,0,0,0.15)" }}>
+    AI CEO — WhatsApp
+  </a>
+  <a href="mailto:info@indianhempassociation.com?subject=AI%20CEO%20Assistance&body=Hi%20IHA%2C%20I%27d%20like%20help%20with..."
+     style={{ background: "#235d35", color: "#fff", padding: "12px 14px", borderRadius: 999,
+              textDecoration: "none", fontWeight: 700, boxShadow: "0 6px 20px rgba(0,0,0,0.15)" }}>
+    Email
   </a>
 </div>
-      
-      </footer>{/* FLOATING AI CEO ASSISTANT */}
-<div style={{
-  position: "fixed",
-  right: 16,
-  bottom: 16,
-  zIndex: 50,
-  display: "flex",
-  gap: 8
-}} aria-label="AI CEO Assistant quick contact">
-  <a
-    href="https://wa.me/919999659994?text=Hello%20IHA%2C%20I%20need%20assistance"
-    style={{
-      background: "#25D366",
-      color: "#fff",
-      padding: "12px 14px",
-      borderRadius: 999,
-      textDecoration: "none",
-      fontWeight: 700,
-      boxShadow: "0 6px 20px rgba(0,0,0,0.15)"
-    }}
-  >AI CEO — WhatsApp</a>
 
-  <a
-    href="mailto:info@indianhempassociation.com?subject=AI%20CEO%20Assistance&body=Hi%20IHA%2C%20I%27d%20like%20help%20with..."
-    style={{
-      background: "#235d35",
-      color: "#fff",
-      padding: "12px 14px",
-      borderRadius: 999,
-      textDecoration: "none",
-      fontWeight: 700,
-      boxShadow: "0 6px 20px rgba(0,0,0,0.15)"
-    }}
-  >Email</a>
-</div>
-
-      </main>
-    </>
-  );
+</main>
+</>
+);
 }
